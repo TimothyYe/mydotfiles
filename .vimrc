@@ -16,24 +16,17 @@ Plugin 'gmarik/Vundle.vim'
 " My Bundles here:
 Plugin 'ZenCoding.vim'
 Plugin 'ervandew/supertab'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'rubycomplete.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
-"Bundle 'vim-scripts/taglist.vim'
 Plugin 'majutsushi/tagbar'
-Plugin 'slim-template/vim-slim'
-Plugin 'tangledhelix/vim-octopress'
 Plugin 'ctrlp.vim' 
 Plugin 'vim-coffee-script'
 Plugin 'sudo.vim'
 Plugin 'xml.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'honza/vim-snippets'
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-bundler'
 Plugin 'tpope/vim-dispatch'
-Plugin 'Lokaltog/vim-powerline'
+Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'TimothyYe/vim-tips'
@@ -68,8 +61,10 @@ filetype plugin indent on     " required!
  " End of vundle configuration
 "Powerline setting
 "Set GUI font type
-set guifont=Source\ Code\ Pro\:h18
-let g:Powerline_symbols = 'fancy'
+if has("gui_running")
+	set guifont=Source\ Code\ Pro\:h18
+endif
+let g:airline_powerline_fonts = 1
 
 "auto completed
 "RUBY
