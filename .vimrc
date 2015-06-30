@@ -1,7 +1,10 @@
 syntax on
 " set color theme
-"colorscheme blackboard
-colorscheme busybee
+"colorscheme busybee
+
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
 
 " Configuration section of vundle
 filetype off  " required!
@@ -33,6 +36,7 @@ Plugin 'TimothyYe/vim-tips'
 Plugin 'Shougo/neocomplete'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
+Plugin 'uguu-org/vim-matrix-screensaver'
 
 "Plugins for golang
 Plugin 'fatih/vim-go'
