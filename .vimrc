@@ -37,6 +37,7 @@ Plugin 'Shougo/neocomplete'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'uguu-org/vim-matrix-screensaver'
+Plugin 'mhinz/vim-startify'
 
 "Plugins for golang
 Plugin 'fatih/vim-go'
@@ -278,3 +279,27 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 
 " code search
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" For startify
+let g:startify_custom_header = [
+\ '       ┌─┐       ┌─┐',
+\ '    ┌──┘ ┴───────┘ ┴──┐',
+\ '    │                 │',
+\ '    │       ───       │',
+\ '    │  ─┬┘       └┬─  │',
+\ '    │                 │',
+\ '    │       ─┴─       │',
+\ '    │                 │',
+\ '    └───┐         ┌───┘',
+\ '        │         │',
+\ '        │         │',
+\ '        │         │',
+\ '        │         └──────────────┐',
+\ '        │                        │',
+\ '        │                        ├─┐',
+\ '        │                        ┌─┘ ',
+\ '        │                        │',
+\ '        └─┐  ┐  ┌───────┬──┐  ┌──┘',
+\ '          │ ─┤ ─┤       │ ─┤ ─┤ ',        
+\ '          └──┴──┘       └──┴──┘ ',
+\]
