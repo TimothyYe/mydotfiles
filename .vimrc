@@ -157,7 +157,7 @@ let g:EasyMotion_leader_key = ","
 "map <leader>t :TlistToggle<CR>
 
 "Settings for TagBar
-map <leader>t :TagbarToggle<CR>
+map <leader>b :TagbarToggle<CR>
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds' : [
