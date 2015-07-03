@@ -36,8 +36,10 @@ Plugin 'TimothyYe/vim-tips'
 Plugin 'Shougo/neocomplete'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
-Plugin 'uguu-org/vim-matrix-screensaver'
 Plugin 'mhinz/vim-startify'
+
+" For fun...
+Plugin 'uguu-org/vim-matrix-screensaver'
 
 "Plugins for golang
 Plugin 'fatih/vim-go'
@@ -235,13 +237,13 @@ vmap    <c-tab>     >gv
 vmap    <s-tab>     <gv
 
 " tab navigation like zsh
-:nmap <leader>p :tabprevious<CR>
-:map <leader>p :tabprevious<CR>
-:imap <leader>p <Esc>:tabprevious<CR>i
+:nmap <leader>h :tabprevious<CR>
+:map <leader>h :tabprevious<CR>
+:imap <leader>h <Esc>:tabprevious<CR>i
 
-:nmap <leader>n :tabnext<CR>
-:map <leader>n :tabnext<CR>
-:imap <leader>n <Esc>:tabnext<CR>i
+:nmap <leader>l :tabnext<CR>
+:map <leader>l :tabnext<CR>
+:imap <leader>l <Esc>:tabnext<CR>i
 
 "markdown hightlight
 let g:octopress_rake_executable = '/usr/bin/rake'
