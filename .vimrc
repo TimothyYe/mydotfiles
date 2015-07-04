@@ -3,7 +3,7 @@ syntax on
 "colorscheme busybee
 
 set background=dark
-let g:solarized_termcolors=256
+" solarized options 
 colorscheme solarized
 
 " Configuration section of vundle
