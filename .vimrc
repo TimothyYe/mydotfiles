@@ -245,6 +245,13 @@ vmap    <s-tab>     <gv
 :map <leader>l :tabnext<CR>
 :imap <leader>l <Esc>:tabnext<CR>i
 
+" settings for resize splitted window
+nmap w[ :vertical resize -3<CR>
+nmap w] :vertical resize +3<CR>
+
+nmap w- :resize -3<CR>
+nmap w= :resize +3<CR>
+
 "markdown hightlight
 let g:octopress_rake_executable = '/usr/bin/rake'
 
