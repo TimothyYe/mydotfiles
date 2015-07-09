@@ -48,17 +48,21 @@ call vundle#end()
 filetype plugin indent on     " required!
  " End of vundle configuration
  
- "Settings for Golang
- let g:neocomplete#enable_at_startup = 1
- let g:go_fmt_command = "goimports"
- let g:go_highlight_functions = 1
- let g:go_highlight_methods = 1
- let g:go_highlight_structs = 1
+let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#sources#syntax#min_keyword_length = 3
 
- au FileType go nmap <leader>r <Plug>(go-run)
- au FileType go nmap <leader>b <Plug>(go-build)
- au FileType go nmap <leader>t <Plug>(go-test)
- au FileType go nmap <leader>c <Plug>(go-coverage)
+"Settings for Golang
+let g:go_fmt_command = "goimports"
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
+au FileType go nmap <leader>r <Plug>(go-run)
+au FileType go nmap <leader>b <Plug>(go-build)
+au FileType go nmap <leader>t <Plug>(go-test)
+au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap gd <Plug>(go-def-tab)
  
 "Powerline setting
 "Set GUI font type
