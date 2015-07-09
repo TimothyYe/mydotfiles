@@ -34,8 +34,6 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'TimothyYe/vim-tips'
 Plugin 'Shougo/neocomplete'
-Plugin 'Shougo/neosnippet'
-Plugin 'Shougo/neosnippet-snippets'
 Plugin 'mhinz/vim-startify'
 
 " For fun...
@@ -48,24 +46,20 @@ Plugin 'fatih/vim-go'
 
 call vundle#end()
 filetype plugin indent on     " required!
-
+ " End of vundle configuration
+ 
  "Settings for Golang
+ let g:neocomplete#enable_at_startup = 1
  let g:go_fmt_command = "goimports"
  let g:go_highlight_functions = 1
  let g:go_highlight_methods = 1
  let g:go_highlight_structs = 1
- let g:go_snippet_engine = "neosnippet"
- "
- " " Brief help
- " :BundleList          - list configured bundles
- " :BundleInstall(!)    - install(update) bundles
- " :BundleSearch(!) foo - search(or refresh cache first) for foo
- " :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
- "
- "  see :h vundle for more details or wiki for FAQ
- "  NOTE: comments after Bundle command are not allowed..
- "
- " End of vundle configuration
+
+ au FileType go nmap <leader>r <Plug>(go-run)
+ au FileType go nmap <leader>b <Plug>(go-build)
+ au FileType go nmap <leader>t <Plug>(go-test)
+ au FileType go nmap <leader>c <Plug>(go-coverage)
+ 
 "Powerline setting
 "Set GUI font type
 if has("gui_running")
@@ -73,17 +67,6 @@ if has("gui_running")
 endif
 let g:airline_powerline_fonts = 1
 
-"auto completed
-"RUBY
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
-let g:rubycomplete_rails = 1
-
-"RUBY plugin
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
-autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
-autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
-autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
 
@@ -145,19 +128,8 @@ map <leader>f :NERDTreeToggle<CR>
 " Settings for vim-easymotion
 let g:EasyMotion_leader_key = ","
 
-" Settings for tagslist
-"let Tlist_Use_Right_Window = 1
-"let Tlist_File_Fold_Auto_Close = 1
-"let Tlist_Show_One_File = 1
-"let Tlist_Sort_Type ='name'
-"let Tlist_GainFocus_On_ToggleOpen = 1
-"let Tlist_Exit_OnlyWindow = 1
-"let Tlist_WinWidth = 32
-"let Tlist_Ctags_Cmd ='/usr/local/Cellar/ctags/5.8/bin/ctags'
-"map <leader>t :TlistToggle<CR>
-
 "Settings for TagBar
-map <leader>b :TagbarToggle<CR>
+map <leader>g :TagbarToggle<CR>
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds' : [
