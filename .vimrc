@@ -17,14 +17,13 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " My Bundles here:
-Plugin 'ZenCoding.vim'
+Plugin 'mattn/emmet-vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'majutsushi/tagbar'
-Plugin 'ctrlp.vim' 
-Plugin 'sudo.vim'
-Plugin 'xml.vim'
+Plugin 'kien/ctrlp.vim' 
+Plugin 'vim-scripts/xml.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-dispatch'
@@ -56,6 +55,8 @@ let g:go_fmt_command = "goimports"
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_structs = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
 au FileType go nmap <Leader>i <Plug>(go-info)
 au FileType go nmap <Leader>gd <Plug>(go-doc)
