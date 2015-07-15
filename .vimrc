@@ -28,8 +28,10 @@ Plugin 'vim-scripts/AutoClose'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'honza/vim-snippets'
 Plugin 'tpope/vim-dispatch'
-Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'bling/vim-airline'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'TimothyYe/vim-tips'
 Plugin 'Shougo/neocomplete'
@@ -168,9 +170,6 @@ let g:tagbar_type_go = {
 "switch window
 :map <leader>w <C-W>w
 
-" 把 CTRL-S 映射为 保存,因为这个操作做得太习惯了  
-imap <C-S> <C-C>:w<CR>  
-
 "set zen coding
  let g:user_zen_settings = {
   \  'php' : {
@@ -267,6 +266,8 @@ let g:neocomplcache_omni_patterns.ruby = '[^. *\t]\.\w*\|\h\w*::'
 
 " code search
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
 " For startify
 let g:startify_custom_header = [
