@@ -17,6 +17,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " My Bundles here:
+Plugin 'mileszs/ack.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'ervandew/supertab'
 Plugin 'scrooloose/nerdtree'
@@ -52,6 +53,9 @@ filetype plugin indent on     " required!
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 2
+
+"For ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
 "Settings for Golang
 let g:go_fmt_command = "goimports"
