@@ -37,6 +37,10 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'TimothyYe/vim-tips'
 Plugin 'Shougo/neocomplete'
 Plugin 'mhinz/vim-startify'
+Plugin 'vim-scripts/wildfire.vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'yonchu/accelerated-smooth-scroll'
+Plugin 'ianva/vim-youdao-translater'
 
 " For fun...
 Plugin 'uguu-org/vim-matrix-screensaver'
@@ -72,6 +76,10 @@ au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap gd <Plug>(go-def-tab)
+
+"For Youdao Translater Plugin
+vnoremap <silent> <C-T> <Esc>:Ydv<CR> 
+nnoremap <silent> <C-T> <Esc>:Ydc<CR> 
  
 "Powerline setting
 "Set GUI font type
@@ -85,6 +93,9 @@ highlight Pmenu ctermbg=238 gui=bold
 
 "Setup SuperTab
 let g:SuperTabRetainCompletionType="context"
+
+"For Indent Guides Plugin
+let g:indent_guides_enable_on_vim_startup = 1
 
 " 设定文件浏览器目录为当前目录  
 set bsdir=buffer  
