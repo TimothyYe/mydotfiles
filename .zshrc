@@ -75,8 +75,8 @@ export PATH=$GEM_HOME/bin:$PATH
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.4.2/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.4.2/bin
+export GOROOT=/usr/local/Cellar/go/1.5/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.5/bin
 
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias mysql='/usr/local/opt/mysql/bin/mysql'
