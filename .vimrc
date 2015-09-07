@@ -41,6 +41,7 @@ Plugin 'vim-scripts/wildfire.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'ianva/vim-youdao-translater'
+Plugin 'elixir-lang/vim-elixir'
 
 " For fun...
 Plugin 'uguu-org/vim-matrix-screensaver'
