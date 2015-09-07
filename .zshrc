@@ -118,6 +118,16 @@ alias gco="git checkout"
 alias gl="git log"
 alias gc="git commit -m"
 
+alias -s go=vi
+alias -s html=vi
+alias -s rb=vi
+alias -s py=vi
+alias -s txt=vi
+alias -s ex=vi
+alias -s exs=vi
+alias -s js=vi
+alias -s json=vi
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
