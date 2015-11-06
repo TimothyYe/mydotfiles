@@ -5,7 +5,8 @@ export ZSH=/Users/Timothy/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="avit"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -75,10 +76,10 @@ export PATH=$GEM_HOME/bin:$PATH
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.5/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.5/bin
+export GOROOT=/usr/local/Cellar/go/1.5.1/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.5.1/bin
 
-alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+eval "$(thefuck --alias)"
 alias mysql='/usr/local/opt/mysql/bin/mysql'
 alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 alias rake='noglob rake'
