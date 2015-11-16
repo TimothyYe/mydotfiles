@@ -42,6 +42,7 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'ianva/vim-youdao-translater'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'matze/vim-move'
 
 " For fun...
 Plugin 'uguu-org/vim-matrix-screensaver'
@@ -58,6 +59,9 @@ filetype plugin indent on     " required!
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+"For vim-move
+let g:move_key_modifier = 'C'
 
 "For ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
@@ -106,6 +110,9 @@ set nocompatible
 set laststatus=2
 " 设置文件编码  
 set fenc=utf-8 
+
+"set to use clipboard of system
+set clipboard=unnamed
 
 " 设置文件编码检测类型及支持格式  
 set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936  
