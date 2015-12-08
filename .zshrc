@@ -63,7 +63,6 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 unset GEM_HOME
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # This loads RVM into a shell session.
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 export RSENSE_HOME=$HOME/.emacs.d/rsense-0.3
 export DYLD_LIBRARY_PATH=/usr/local/opt/mysql/lib:$DYLD_LIBRARY_PATH
@@ -106,6 +105,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias zb="cat /dev/urandom | hexdump -C | grep --color=auto \"ca fe\""
 alias emacs23="open -a Emacs"
+alias mtr="/usr/local/sbin/mtr"
 alias gs="git status"
 alias ga='git add'
 alias gd='git diff'
@@ -118,6 +118,7 @@ alias gps="git push"
 alias gco="git checkout"
 alias gl="git log"
 alias gc="git commit -m"
+alias gm="git merge"
 
 alias -s go=vi
 alias -s html=vi
@@ -157,3 +158,5 @@ export PATH=$PATH:/Users/Timothy/Documents/MyCode/gradle-1.12/bin
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

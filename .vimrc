@@ -32,6 +32,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-rails'
 Plugin 'bling/vim-airline'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'TimothyYe/vim-tips'
@@ -58,7 +59,7 @@ filetype plugin indent on     " required!
  
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
-let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#sources#syntax#min_keyword_length = 2
 
 "For vim-move
 let g:move_key_modifier = 'C'
@@ -144,10 +145,10 @@ let mapleader="\<Space>"
 let g:mapleader="\<Space>"
 
 "tabs
-map <leader>tn :tabnew<cr>
-map <leader>te :tabedit
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove
+nmap <leader>tn :tabnew<cr>
+nmap <leader>te :tabedit
+nmap <leader>tc :tabclose<cr>
+nmap <leader>tm :tabmove
 
 "  映射NERDTree插件
 :map <leader>n :NERDTree<CR>  
@@ -239,12 +240,7 @@ vmap    <s-tab>     <gv
 
 " tab navigation like zsh
 :nmap <leader>h :tabprevious<CR>
-:map <leader>h :tabprevious<CR>
-:imap <leader>h <Esc>:tabprevious<CR>i
-
 :nmap <leader>l :tabnext<CR>
-:map <leader>l :tabnext<CR>
-:imap <leader>l <Esc>:tabnext<CR>i
 
 " settings for resize splitted window
 nmap w[ :vertical resize -3<CR>
