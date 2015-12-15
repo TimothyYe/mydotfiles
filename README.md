@@ -1,5 +1,5 @@
 # Introduction
-This repository is to manage all my dot configuration files, including:
+This repository is used to manage all my dot configuration files, it includes:
 
 >* Vim
 >* Tmux
