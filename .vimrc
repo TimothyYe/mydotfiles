@@ -56,6 +56,8 @@ Plugin 'fatih/vim-go'
 call vundle#end()
 filetype plugin indent on     " required!
  " End of vundle configuration
+
+let g:airline_theme='light'
  
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
@@ -86,6 +88,8 @@ au FileType go nmap gd <Plug>(go-def-tab)
 "For Youdao Translater Plugin
 vnoremap <silent> <C-T> <Esc>:Ydv<CR> 
 nnoremap <silent> <C-T> <Esc>:Ydc<CR> 
+
+inoremap jj <Esc>
  
 "Powerline setting
 "Set GUI font type
