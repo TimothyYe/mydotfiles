@@ -209,3 +209,17 @@ y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
 spaces=$(printf "%-${y}s" " ")
 echo -e "${spaces}${_MESSAGE}"
 echo " "
+
+# Load zsh-syntax-highlighting.
+source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#
+# Load zsh-autosuggestions.
+source ~/.oh-my-zsh/plugins/zsh-autosuggestions/autosuggestions.zsh
+#
+
+# Enable autosuggestions automatically.
+zle-line-init() {
+    zle autosuggest-start
+}
+
+zle -N zle-line-init
