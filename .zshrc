@@ -223,3 +223,5 @@ zle-line-init() {
 }
 
 zle -N zle-line-init
+AUTOSUGGESTION_HIGHLIGHT_COLOR="fg=10"
+AUTOSUGGESTION_ACCEPT_RIGHT_ARROW='1'
