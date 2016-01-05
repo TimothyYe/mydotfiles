@@ -80,7 +80,7 @@ export PATH=$GEM_HOME/bin:$PATH
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
 export GOROOT=/usr/local/Cellar/go/1.5.2/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.5.2/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.5.2/bin:~/.mix
 
 eval "$(thefuck --alias)"
 alias mysql='/usr/local/opt/mysql/bin/mysql'
