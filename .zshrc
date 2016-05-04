@@ -58,7 +58,7 @@ plugins=(git git-extras autojump sublime web-search)
 
 # User configuration
 
-export PATH="/usr/local/heroku/bin:/Users/Timothy/gems/bin:/Users/Timothy/.rvm/gems/ruby-2.1.1/bin:/Users/Timothy/.rvm/gems/ruby-2.1.1@global/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.4.3/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
+export PATH="/usr/local/heroku/bin:/Users/Timothy/gems/bin:/Users/Timothy/.rvm/gems/ruby-2.1.1/bin:/Users/Timothy/.rvm/gems/ruby-2.1.1@global/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.6.2/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -79,8 +79,8 @@ export PATH=$GEM_HOME/bin:$PATH
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.6/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.6/bin:~/.mix
+export GOROOT=/usr/local/Cellar/go/1.6.2/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.6.2/bin:~/.mix
 
 eval "$(thefuck --alias)"
 alias mysql='/usr/local/opt/mysql/bin/mysql'
