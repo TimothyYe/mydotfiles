@@ -87,7 +87,8 @@ alias mysql='/usr/local/opt/mysql/bin/mysql'
 alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 alias rake='noglob rake'
 
-alias vi="vim"
+alias vi="nvim"
+alias vim="nvim"
 alias ssh="ssh -X"
 alias md="mkdir -p"
 alias rd="rmdir"
