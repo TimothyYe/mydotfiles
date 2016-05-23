@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'mileszs/ack.vim'
 Plug 'mattn/emmet-vim'
 Plug 'ervandew/supertab'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
 Plug 'kien/ctrlp.vim' 
@@ -46,7 +46,7 @@ Plug 'matze/vim-move'
 Plug 'uguu-org/vim-matrix-screensaver'
 
 "Plugins for golang
-Plug 'fatih/vim-go'
+Plug 'fatih/vim-go', { 'for': 'go' }
 "goimports settings
 "autocmd BufWritePre *.go :Fmt
 
