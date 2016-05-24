@@ -10,4 +10,8 @@ This repository is used to manage all my dot configuration files, it includes:
 # Demo
 This is a demo to run a NeoVim in Tmux.
 
+>* Use Tmux to manage multiple panels & windows.
+>* Run NeoVim in Tmux panel.
+>* Config NeoVim to use YouCompleteMe.
+
 ![https://raw.githubusercontent.com/TimothyYe/mydotfiles/master/snapshot/tmux-nvim.png](https://raw.githubusercontent.com/TimothyYe/mydotfiles/master/snapshot/tmux-nvim.png)
