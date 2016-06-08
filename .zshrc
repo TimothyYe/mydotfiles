@@ -54,7 +54,7 @@ ZSH_THEME="lambda-mod"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-extras autojump sublime web-search)
+plugins=(git git-extras autojump sublime web-search zsh-autosuggestions)
 
 # User configuration
 
@@ -98,7 +98,7 @@ alias slink="link -s"
 alias sed="sed -E"
 alias l="ls -l"
 alias la="ls -a"
-alias ll="ls -l"
+alias ll="ls -la"
 alias lt="ls -lhtrF"
 alias l.="ls -lhtrdF .*"
 alias grep="grep --color=auto"
@@ -216,14 +216,8 @@ echo " "
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #
 # Load zsh-autosuggestions.
-source ~/.oh-my-zsh/plugins/zsh-autosuggestions/autosuggestions.zsh
+source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #
 
 # Enable autosuggestions automatically.
-zle-line-init() {
-    zle autosuggest-start
-}
-
-zle -N zle-line-init
-AUTOSUGGESTION_HIGHLIGHT_COLOR="fg=10"
-AUTOSUGGESTION_ACCEPT_RIGHT_ARROW='1'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10"
