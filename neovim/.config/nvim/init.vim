@@ -55,8 +55,6 @@ call plug#end()
 filetype plugin indent on     " required!
  " End of vundle configuration
 
-let g:airline_theme='light'
-
 "For vim-move
 let g:move_key_modifier = 'C'
 
@@ -86,11 +84,14 @@ nnoremap <silent> <C-T> <Esc>:Ydc<CR>
 inoremap jj <Esc>
  
 "Powerline setting
+let g:airline_theme='light'
+
 "Set GUI font type
-if has("gui_running")
-	set guifont=Source\ Code\ Pro\:h18
-endif
+"if has("gui_running")
 let g:airline_powerline_fonts = 1
+set guifont=Source\ Code\ Pro\ for\ Powerline\ :h18
+"endif
+
 
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold

@@ -89,6 +89,7 @@ alias rake='noglob rake'
 
 alias vi="nvim"
 alias vim="nvim"
+alias tmux="tmux -2"
 alias ssh="ssh -X"
 alias md="mkdir -p"
 alias rd="rmdir"
@@ -165,6 +166,7 @@ export PATH=$PATH:/Users/Timothy/Documents/MyCode/gradle-1.12/bin
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval "$(docker-machine env default)"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 _COLUMNS=$(tput cols)
