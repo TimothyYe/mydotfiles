@@ -166,7 +166,6 @@ export PATH=$PATH:/Users/Timothy/Documents/MyCode/gradle-1.12/bin
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-eval "$(docker-machine env default)"
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 _COLUMNS=$(tput cols)
