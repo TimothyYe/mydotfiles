@@ -58,7 +58,7 @@ plugins=(git git-extras autojump sublime web-search zsh-autosuggestions)
 
 # User configuration
 
-export PATH="/usr/local/heroku/bin:/Users/Timothy/gems/bin:/Users/Timothy/.rvm/gems/ruby-2.1.1/bin:/Users/Timothy/.rvm/gems/ruby-2.1.1@global/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.6.2/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
+export PATH="/usr/local/heroku/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.6.2/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -72,10 +72,6 @@ unset GEM_HOME
 export RSENSE_HOME=$HOME/.emacs.d/rsense-0.3
 export DYLD_LIBRARY_PATH=/usr/local/opt/mysql/lib:$DYLD_LIBRARY_PATH
 export EDITOR="/usr/local/bin/mate -w"
-
-#Env settings for cocoapods
-export GEM_HOME=$HOME/gems
-export PATH=$GEM_HOME/bin:$PATH
 								 
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
