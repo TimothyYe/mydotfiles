@@ -41,12 +41,21 @@ Plug 'yonchu/accelerated-smooth-scroll'
 Plug 'ianva/vim-youdao-translater'
 Plug 'elixir-lang/vim-elixir'
 Plug 'matze/vim-move'
+Plug 'pbrisbin/vim-mkdir'
 
 " For fun...
 Plug 'uguu-org/vim-matrix-screensaver'
 
 "Plugins for golang
 Plug 'fatih/vim-go', { 'for': 'go' }
+
+"Plugins for ruby
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-rails'
+Plug 'thoughtbot/vim-rspec'
+
 "goimports settings
 "autocmd BufWritePre *.go :Fmt
 
@@ -149,8 +158,9 @@ nmap <leader>te :tabedit
 nmap <leader>tc :tabclose<cr>
 nmap <leader>tm :tabmove
 
+map <leader>n :nohl<CR>
+
 "  映射NERDTree插件
-:map <leader>n :NERDTree<CR>  
 "let loaded_nerd_tree=1
 let NERDTreeQuitOnOpen = 1
 let NERDChristmasTree=1
