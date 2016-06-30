@@ -161,6 +161,8 @@ nmap <leader>tm :tabmove
 
 "For neomake
 map <leader>m :Neomake<CR>
+let g:neomake_open_list = 1
+let g:neomake_list_height = 7
 
 "Disable highlight
 map <leader>n :nohl<CR>
