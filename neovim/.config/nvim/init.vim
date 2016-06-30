@@ -33,7 +33,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'TimothyYe/vim-tips'
 Plug 'Valloric/YouCompleteMe'
-Plug 'scrooloose/syntastic'
+Plug 'neomake/neomake'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/wildfire.vim'
 Plug 'nathanaelkane/vim-indent-guides'
@@ -57,7 +57,7 @@ Plug 'tpope/vim-rails'
 Plug 'thoughtbot/vim-rspec'
 
 "goimports settings
-"autocmd BufWritePre *.go :Fmt
+autocmd BufWritePost * Neomake
 
 call plug#end()
 
@@ -294,18 +294,6 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-"Config for syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 0
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_loc_list_height = 5
-let g:syntastic_go_checkers = ['go', 'errcheck']
 
 " code search
 let g:ackprg = 'ag --nogroup --nocolor --column'
