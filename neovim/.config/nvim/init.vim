@@ -56,10 +56,11 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails'
 Plug 'thoughtbot/vim-rspec'
 
-"goimports settings
-autocmd BufWritePost * Neomake
-
 call plug#end()
+
+
+"Check syntastic by neomake
+autocmd BufWritePost * Neomake
 
 filetype plugin indent on     " required!
  " End of vundle configuration
@@ -158,6 +159,10 @@ nmap <leader>te :tabedit
 nmap <leader>tc :tabclose<cr>
 nmap <leader>tm :tabmove
 
+"For neomake
+map <leader>m :Neomake<CR>
+
+"Disable highlight
 map <leader>n :nohl<CR>
 
 "  映射NERDTree插件
