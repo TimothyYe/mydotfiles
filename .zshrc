@@ -58,7 +58,7 @@ plugins=(git git-extras autojump sublime web-search zsh-autosuggestions)
 
 # User configuration
 
-export PATH="/usr/local/heroku/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.6.2/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
+export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/heroku/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.6.2/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -77,7 +77,7 @@ export EDITOR="/usr/local/bin/mate -w"
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
 export GOROOT=/usr/local/Cellar/go/1.6.2/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.6.2/bin:~/.mix
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.6.2/bin:~/.mix:/usr/local/share/dotnet
 
 eval "$(thefuck --alias)"
 alias mysql='/usr/local/opt/mysql/bin/mysql'
@@ -107,7 +107,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias zb="cat /dev/urandom | hexdump -C | grep --color=auto \"ca fe\""
-alias emacs23="open -a Emacs"
 alias mtr="/usr/local/sbin/mtr"
 alias gs="git status"
 alias ga='git add'
@@ -123,6 +122,10 @@ alias gl="git log"
 alias gc="git commit -m"
 alias gm="git merge"
 alias pro="proxychains4"
+alias dm="docker-machine"
+alias di="docker images"
+alias dps="docker ps"
+
 
 alias -s go=vi
 alias -s html=vi
