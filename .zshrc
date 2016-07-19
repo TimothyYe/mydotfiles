@@ -122,9 +122,14 @@ alias gl="git log"
 alias gc="git commit -m"
 alias gm="git merge"
 alias pro="proxychains4"
+
+#For docker
 alias dm="docker-machine"
 alias di="docker images"
 alias dps="docker ps"
+alias dl="docker logs --tail=50"
+alias drm="docker rm"
+alias drmi="docker rmi $(docker images --filter "dangling=true" -q --no-trunc)"
 
 
 alias -s go=vi
