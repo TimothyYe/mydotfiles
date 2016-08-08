@@ -79,6 +79,9 @@ export GOBIN=$HOME/workspace/bin
 export GOROOT=/usr/local/Cellar/go/1.6.3/libexec
 export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.6.3/bin:~/.mix:/usr/local/share/dotnet
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+
 eval "$(thefuck --alias)"
 alias mysql='/usr/local/opt/mysql/bin/mysql'
 alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
