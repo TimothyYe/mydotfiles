@@ -111,7 +111,7 @@ highlight Pmenu ctermbg=238 gui=bold
 let g:SuperTabRetainCompletionType="context"
 
 "For Indent Guides Plugin
-let g:indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_enable_on_vim_startup = 1
 
 " 设定文件浏览器目录为当前目录  
 set bsdir=buffer  
