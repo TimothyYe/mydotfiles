@@ -60,7 +60,8 @@ call plug#end()
 
 
 "Check syntastic by neomake
-autocmd BufWritePost * Neomake
+"autocmd BufWritePost * Neomake
+"autocmd BufEnter * Neomake
 
 filetype plugin indent on     " required!
  " End of vundle configuration
