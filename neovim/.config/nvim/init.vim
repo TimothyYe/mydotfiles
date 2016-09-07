@@ -42,6 +42,7 @@ Plug 'ianva/vim-youdao-translater'
 Plug 'elixir-lang/vim-elixir'
 Plug 'matze/vim-move'
 Plug 'pbrisbin/vim-mkdir'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " For fun...
 Plug 'uguu-org/vim-matrix-screensaver'
