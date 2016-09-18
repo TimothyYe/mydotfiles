@@ -32,7 +32,11 @@ Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'TimothyYe/vim-tips'
-Plug 'Valloric/YouCompleteMe'
+"Plug 'Valloric/YouCompleteMe'
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-go', { 'do': 'make'}
+
 Plug 'neomake/neomake'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/wildfire.vim'
@@ -276,9 +280,6 @@ nmap w] :vertical resize +3<CR>
 nmap w- :resize -3<CR>
 nmap w= :resize +3<CR>
 
-"markdown hightlight
-let g:octopress_rake_executable = '/usr/bin/rake'
-
 "scss,sass
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *.sass set filetype=scss
@@ -290,19 +291,30 @@ au BufWritePost *.coffee :CoffeeCompile watch vert
 "let skim use slim syntax
 au BufRead,BufNewFile *.skim set filetype=slim
 
-"ctags
-set tags+=~/gitdb/rails/tags
-
-"auto completed
-" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
-
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+
+" neocomplete like
+set completeopt+=noinsert
+" deoplete.nvim recommend
+set completeopt+=noselect
+
+" Path to python interpreter for neovim
+"let g:python3_host_prog  = '/path/to/python3'
+" Skip the check of neovim module
+"let g:python3_host_skip_check = 1
+
+" Run deoplete.nvim automatically
+let g:deoplete#enable_at_startup = 1
+" deoplete-go settings
+let g:deoplete#sources#go#gocode_binary = $GOPATH.'/bin/gocode'
+let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
+let g:deoplete#sources#go#use_cache = 1
+let g:deoplete#sources#go#json_directory = '~/.cache/deoplete/go/'
 
 " code search
 let g:ackprg = 'ag --nogroup --nocolor --column'

@@ -79,6 +79,7 @@ export GOBIN=$HOME/workspace/bin
 export GOROOT=/usr/local/Cellar/go/1.7/libexec
 export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.7/bin:~/.mix:/usr/local/share/dotnet
 
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
