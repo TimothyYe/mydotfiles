@@ -61,6 +61,9 @@ Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-rails'
 Plug 'thoughtbot/vim-rspec'
 
+"Plugin(s) for Rust
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 
@@ -98,7 +101,7 @@ au FileType go nmap gd <Plug>(go-def-tab)
 vnoremap <silent> <C-T> <Esc>:Ydv<CR> 
 nnoremap <silent> <C-T> <Esc>:Ydc<CR> 
 
-inoremap jj <Esc>
+"inoremap jj <Esc>
  
 "Powerline setting
 let g:airline_theme='light'
@@ -165,6 +168,9 @@ nmap <leader>tn :tabnew<cr>
 nmap <leader>te :tabedit
 nmap <leader>tc :tabclose<cr>
 nmap <leader>tm :tabmove
+
+"For Rust settings
+let g:rustfmt_autosave = 1
 
 "For neomake
 map <leader>m :Neomake<CR>
