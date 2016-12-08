@@ -58,7 +58,7 @@ plugins=(git git-extras autojump sublime web-search zsh-autosuggestions)
 
 # User configuration
 
-export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/heroku/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.7.3/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
+export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/heroku/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.7.4/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -76,8 +76,8 @@ export EDITOR="/usr/local/bin/mate -w"
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.7.3/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.7.3/bin:~/.mix:/usr/local/share/dotnet
+export GOROOT=/usr/local/Cellar/go/1.7.4/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.7.4/bin:~/.mix:/usr/local/share/dotnet
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
