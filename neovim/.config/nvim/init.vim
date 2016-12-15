@@ -5,6 +5,7 @@ syntax on
 set background=dark
 " solarized options 
 colorscheme solarized
+hi Normal ctermfg=252 ctermbg=none
 
 " Configuration section of vundle
 filetype off  " required!
