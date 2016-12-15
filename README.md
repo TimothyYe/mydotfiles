@@ -16,3 +16,5 @@ This is a demo to run a NeoVim in Tmux.
 >* Shell is configured to use Zsh & Oh-My-Zsh
 
 ![https://raw.githubusercontent.com/TimothyYe/mydotfiles/master/snapshot/tmux-nvim.png](https://raw.githubusercontent.com/TimothyYe/mydotfiles/master/snapshot/tmux-nvim.png)
+
+![https://raw.githubusercontent.com/TimothyYe/mydotfiles/master/snapshot/tmux-nvim2.png](https://raw.githubusercontent.com/TimothyYe/mydotfiles/master/snapshot/tmux-nvim2.png)
