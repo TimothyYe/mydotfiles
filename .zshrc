@@ -71,7 +71,8 @@ unset GEM_HOME
 
 export RSENSE_HOME=$HOME/.emacs.d/rsense-0.3
 export DYLD_LIBRARY_PATH=/usr/local/opt/mysql/lib:$DYLD_LIBRARY_PATH
-export EDITOR="/usr/local/bin/mate -w"
+export EDITOR="/usr/local/bin/nvim"
+export VISUAL="/usr/local/bin/nvim"
 								 
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
