@@ -32,7 +32,6 @@ Plug 'tpope/vim-rails'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Lokaltog/vim-easymotion'
-Plug 'TimothyYe/vim-tips'
 "Plug 'Valloric/YouCompleteMe'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
