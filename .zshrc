@@ -64,7 +64,9 @@ export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/heroku/bin:/Users/Tim
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+
 
 unset GEM_HOME
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
