@@ -36,6 +36,7 @@ Plug 'Lokaltog/vim-easymotion'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'zchee/deoplete-jedi'
 
 Plug 'neomake/neomake'
 Plug 'mhinz/vim-startify'
