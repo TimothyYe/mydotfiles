@@ -10,7 +10,7 @@ hi Normal ctermfg=252 ctermbg=none
 " Configuration section of vundle
 filetype off  " required!
 
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 " My Bundles here:
 Plug 'mileszs/ack.vim'
