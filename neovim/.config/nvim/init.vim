@@ -102,7 +102,7 @@ nnoremap <silent> <C-T> <Esc>:Ydc<CR>
 "inoremap jj <Esc>
  
 "Powerline setting
-let g:airline_theme='light'
+let g:airline_theme='molokai'
 
 "Set GUI font type
 "if has("gui_running")
