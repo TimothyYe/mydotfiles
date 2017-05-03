@@ -49,9 +49,6 @@ Plug 'matze/vim-move'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-" For fun...
-Plug 'uguu-org/vim-matrix-screensaver'
-
 "Plugins for golang
 Plug 'fatih/vim-go', { 'for': 'go' }
 
