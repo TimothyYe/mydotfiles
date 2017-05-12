@@ -44,7 +44,6 @@ Plug 'vim-scripts/wildfire.vim'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'yonchu/accelerated-smooth-scroll'
 Plug 'ianva/vim-youdao-translater'
-Plug 'elixir-lang/vim-elixir'
 Plug 'matze/vim-move'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
