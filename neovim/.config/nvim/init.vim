@@ -296,22 +296,19 @@ au BufWritePost *.coffee :CoffeeCompile watch vert
 "let skim use slim syntax
 au BufRead,BufNewFile *.skim set filetype=slim
 
+"for python
+au BufRead,BufNewFile *.py set shiftwidth=4 tabstop=4 softtabstop=4 expandtab smarttab autoindent
+
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " neocomplete like
 set completeopt+=noinsert
 " deoplete.nvim recommend
 set completeopt+=noselect
-
-" Path to python interpreter for neovim
-"let g:python3_host_prog  = '/path/to/python3'
-" Skip the check of neovim module
-"let g:python3_host_skip_check = 1
 
 " Run deoplete.nvim automatically
 let g:deoplete#enable_at_startup = 1
