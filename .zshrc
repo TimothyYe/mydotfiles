@@ -82,6 +82,9 @@ export GOBIN=$HOME/workspace/bin
 export GOROOT=/usr/local/Cellar/go/1.7.5/libexec
 export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.7.5/bin:~/.mix:/usr/local/share/dotnet
 
+#Env configuration for anaconda
+export PATH=$PATH:~/anaconda/bin
+
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
@@ -116,6 +119,7 @@ alias ....="cd ../../.."
 alias zb="cat /dev/urandom | hexdump -C | grep --color=auto \"ca fe\""
 alias mtr="/usr/local/sbin/mtr"
 alias gs="git status"
+alias gsm="git summary"
 alias ga='git add'
 alias gd='git diff'
 alias gf='git fetch'
