@@ -94,6 +94,7 @@ alias mysql='/usr/local/opt/mysql/bin/mysql'
 alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 alias rake='noglob rake'
 
+alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
 alias vi="nvim"
 alias vim="nvim"
 alias tmux="tmux -2"
