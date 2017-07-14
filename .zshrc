@@ -134,6 +134,7 @@ alias gl="git log"
 alias gc="git commit -m"
 alias gm="git merge"
 alias pro="proxychains4"
+alias gb="go build"
 
 #For docker
 alias dm="docker-machine"
