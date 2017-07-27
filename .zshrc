@@ -58,7 +58,7 @@ plugins=(autojump sublime web-search zsh-autosuggestions extract)
 
 # User configuration
 
-export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/heroku/bin:/Users/Timothy/.rvm/rubies/ruby-2.1.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.8.3/bin:/Users/Timothy/Documents/MyCode/gradle-1.12/bin"
+export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.8.3/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -158,13 +158,6 @@ alias -s ex=vi
 alias -s exs=vi
 alias -s js=vi
 alias -s json=vi
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-### Settings for gradle
-export GRADLE_HOME=/Users/Timothy/Documents/MyCode/gradle-1.12
-export PATH=$PATH:/Users/Timothy/Documents/MyCode/gradle-1.12/bin
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
