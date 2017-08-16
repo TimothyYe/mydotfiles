@@ -166,7 +166,7 @@ alias ip="curl http://ip.cn"
 
 # custom functions
 function jubi() {
-	curl https://www.jubi.com/api/v1/ticker?coin=$1
+	while :; do curl https://www.jubi.com/api/v1/ticker?coin=$1 2>/dev/null | jq -C; sleep 3; done
 }
 
 # Preferred editor for local and remote sessions
