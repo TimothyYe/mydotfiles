@@ -164,6 +164,11 @@ alias proxy="export ALL_PROXY=socks5://127.0.0.1:7070"
 alias unproxy="unset ALL_PROXY"
 alias ip="curl http://ip.cn"
 
+# custom functions
+function jubi() {
+	curl https://www.jubi.com/api/v1/ticker?coin=$1
+}
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
