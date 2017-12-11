@@ -162,7 +162,7 @@ alias -s json=vi
 # alias for proxy
 alias proxy="export ALL_PROXY=socks5://127.0.0.1:7070"
 alias unproxy="unset ALL_PROXY"
-alias ip="curl http://ip.cn"
+alias ip="curl https://haoip.cn/"
 
 # custom functions
 function jubi() {
