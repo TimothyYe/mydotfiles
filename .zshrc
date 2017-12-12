@@ -119,7 +119,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias zb="cat /dev/urandom | hexdump -C | grep --color=auto \"ca fe\""
-alias mtr="/usr/local/sbin/mtr"
+alias mtr="/usr/local/bin/mtr"
 alias gs="git status"
 alias gsm="git summary"
 alias ga='git add'
