@@ -58,7 +58,7 @@ plugins=(autojump sublime web-search zsh-autosuggestions extract)
 
 # User configuration
 
-export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.10/bin"
+export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.10.1/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -79,8 +79,8 @@ export VISUAL="/usr/local/bin/nvim"
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.10/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.10/bin:~/.mix:/usr/local/share/dotnet
+export GOROOT=/usr/local/Cellar/go/1.10.1/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.10.1/bin:~/.mix:/usr/local/share/dotnet
 
 #Env configuration for anaconda
 export PATH=$PATH:~/anaconda/bin
