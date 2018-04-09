@@ -7,6 +7,8 @@ set background=dark
 colorscheme solarized
 hi Normal ctermfg=252 ctermbg=none
 
+set guifont=Fira\ Code:h14
+
 " Configuration section of vundle
 filetype off  " required!
 
@@ -28,7 +30,6 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-rails'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Lokaltog/vim-easymotion'
@@ -49,13 +50,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 "Plugins for golang
 Plug 'fatih/vim-go', { 'for': 'go' }
-
-"Plugins for ruby
-Plug 'vim-ruby/vim-ruby'
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-rails'
-Plug 'thoughtbot/vim-rspec'
 
 "Plugin(s) for Rust
 Plug 'rust-lang/rust.vim'
