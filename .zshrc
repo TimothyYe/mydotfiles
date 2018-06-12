@@ -58,7 +58,7 @@ plugins=(autojump sublime web-search zsh-autosuggestions extract)
 
 # User configuration
 
-export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.10.2/bin"
+export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin:/Users/Timothy/workspace/bin:/usr/local/Cellar/go/1.10.3/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -79,8 +79,12 @@ export VISUAL="/usr/local/bin/nvim"
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.10.2/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.10.2/bin:~/.mix:/usr/local/share/dotnet
+export GOROOT=/usr/local/Cellar/go/1.10.3/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.10.3/bin:~/.mix:/usr/local/share/dotnet
+
+#Java ENV
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
+PATH=$PATH:$JAVA_HOME/bin
 
 #Env configuration for anaconda
 export PATH=$PATH:~/anaconda/bin
@@ -160,7 +164,7 @@ alias -s json=vi
 # alias for proxy
 alias proxy="export ALL_PROXY=socks5://127.0.0.1:7070"
 alias unproxy="unset ALL_PROXY"
-alias ip="curl https://haoip.cn/"
+alias ip="curl ip.cn"
 
 # custom functions
 function jubi() {
