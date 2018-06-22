@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
 
-export ZSH=/Users/Timothy/.oh-my-zsh
+export ZSH=/Users/timothy/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -87,7 +87,7 @@ JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
 PATH=$PATH:$JAVA_HOME/bin
 
 #Env configuration for anaconda
-export PATH=$PATH:~/anaconda/bin
+export PATH=$PATH:~/anaconda2/bin
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
