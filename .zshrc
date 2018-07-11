@@ -80,7 +80,7 @@ export VISUAL="/usr/local/bin/nvim"
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
 export GOROOT=/usr/local/Cellar/go/1.10.3/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.10.3/bin:~/.mix:/usr/local/share/dotnet
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.10.3/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
 
 #Java ENV
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
