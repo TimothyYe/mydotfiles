@@ -28,3 +28,5 @@ This is a demo to run a NeoVim in Tmux.
 ![](https://www.xiaozhou.net/pics/ide.png)
 
 ![](https://www.xiaozhou.net/pics/tmux/3.png)
+
+![](http://ox2lpkfis.bkt.clouddn.com/tmux-nvim3.png)
