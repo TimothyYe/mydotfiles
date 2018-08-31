@@ -198,6 +198,7 @@ nnoremap  <leader>9 :call utils#tab_buf_switch(9)<cr>
 " tab navigation like zsh
 :nmap <leader>h :bp<CR>
 :nmap <leader>l :bn<CR>
+:nmap <leader>w :bd<CR>
 
 "  映射NERDTree插件
 "let loaded_nerd_tree=1
@@ -238,9 +239,6 @@ let g:tagbar_type_go = {
     \ 'ctagsbin' : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
 \ }
-
-"switch window
-:map <leader>w <C-W>w
 
 "set zen coding
  let g:user_zen_settings = {
