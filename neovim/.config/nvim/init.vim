@@ -195,6 +195,10 @@ nnoremap  <leader>8 :call utils#tab_buf_switch(8)<cr>
 " tab or buf 9
 nnoremap  <leader>9 :call utils#tab_buf_switch(9)<cr>
 
+" tab navigation like zsh
+:nmap <leader>h :bp<CR>
+:nmap <leader>l :bn<CR>
+
 "  映射NERDTree插件
 "let loaded_nerd_tree=1
 let NERDTreeQuitOnOpen = 0
@@ -290,10 +294,6 @@ nmap    <c-tab>     v>
 nmap    <s-tab>     v<
 vmap    <c-tab>     >gv
 vmap    <s-tab>     <gv
-
-" tab navigation like zsh
-:nmap <leader>h :tabprevious<CR>
-:nmap <leader>l :tabnext<CR>
 
 " settings for resize splitted window
 nmap w[ :vertical resize -3<CR>
