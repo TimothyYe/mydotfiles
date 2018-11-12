@@ -288,7 +288,6 @@ let g:ctrlp_follow_symlinks=1
 imap <C-A> <C-C><c-p>
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.jpg,*.png,*.gif,*.jpeg,.DS_Store  " MacOSX/Linux
-let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 
 " move lines up or down (command - D)
 nmap <D-j> mz:m+<cr>`z
