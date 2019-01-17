@@ -1,4 +1,6 @@
 {
+	  "coc.preferences.diagnostic.displayByAle": false,
+	  "coc.preferences.noselect": false,
 		"languageserver": {
 		"golang": {
 			"command": "bingo",
