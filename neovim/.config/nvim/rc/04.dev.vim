@@ -16,6 +16,9 @@ au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap gd <Plug>(go-def-tab)
 
+"For go
+au BufNewFile,BufRead *.go set filetype=go  noexpandtab tabstop=4 shiftwidth=4
+
 "For python
 au BufRead,BufNewFile *.py set shiftwidth=4 tabstop=4 softtabstop=4 expandtab smarttab autoindent
 
