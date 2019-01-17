@@ -1,6 +1,7 @@
 call plug#begin('~/.local/share/nvim/plugged')
 
 " My Bundles here:
+Plug 'iCyMind/NeoSolarized'
 Plug 'mileszs/ack.vim'
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
@@ -13,14 +14,12 @@ Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Lokaltog/vim-easymotion'
 Plug 'terryma/vim-multiple-cursors'
 
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
-Plug 'zchee/deoplete-jedi'
 
 Plug 'neomake/neomake'
 Plug 'mhinz/vim-startify'

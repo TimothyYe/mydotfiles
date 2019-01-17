@@ -26,6 +26,17 @@ au BufRead,BufNewFile *.py set shiftwidth=4 tabstop=4 softtabstop=4 expandtab sm
 "For Rust settings
 let g:rustfmt_autosave = 1
 
+"scss,sass
+au BufRead,BufNewFile *.scss set filetype=scss
+au BufRead,BufNewFile *.sass set filetype=scss
+
+"coffee script
+au BufWritePost *.coffee silent CoffeeMake!
+au BufWritePost *.coffee :CoffeeCompile watch vert
+
+"let skim use slim syntax
+au BufRead,BufNewFile *.skim set filetype=slim
+
 " NeoSnippet Plugin key-mappings.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -39,7 +50,7 @@ imap <expr><TAB>
  \ neosnippet#expandable_or_jumpable() ?
  \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"<Paste>
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 
 " For conceal markers.
 if has('conceal')
