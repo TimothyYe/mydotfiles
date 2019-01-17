@@ -3,7 +3,6 @@ call plug#begin('~/.local/share/nvim/plugged')
 " My Bundles here:
 Plug 'mileszs/ack.vim'
 Plug 'mattn/emmet-vim'
-Plug 'ervandew/supertab'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
@@ -11,7 +10,6 @@ Plug 'kien/ctrlp.vim'
 Plug 'vim-scripts/xml.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'flazz/vim-colorschemes'
-Plug 'honza/vim-snippets'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -35,6 +33,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 "Plugins for golang
 Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'Shougo/neosnippet.vim'
+Plug 'Shougo/neosnippet-snippets'
 
 "Plugin(s) for Rust
 Plug 'rust-lang/rust.vim'

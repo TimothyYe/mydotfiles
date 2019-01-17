@@ -29,9 +29,6 @@ set guifont=Source\ Code\ Pro\ for\ Powerline\ :h18
 "improve autocomplete menu color
 highlight Pmenu ctermbg=238 gui=bold
 
-"Setup SuperTab
-let g:SuperTabRetainCompletionType="context"
-
 " 设定文件浏览器目录为当前目录  
 set bsdir=buffer  
 " 设置编码  
@@ -205,11 +202,6 @@ autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
-
-" neocomplete like
-set completeopt+=noinsert
-" deoplete.nvim recommend
-set completeopt+=noselect
 
 " code search
 let g:ackprg = 'ag --nogroup --nocolor --column'
