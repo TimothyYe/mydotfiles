@@ -1,11 +1,16 @@
 {
-	  "coc.preferences.diagnostic.displayByAle": false,
-	  "coc.preferences.noselect": false,
+	  "coc.preferences.diagnostic.displayByAle": true,
+		"coc.preferences.noselect": true, 
+		"coc.preferences.timeout": 1000,
 		"languageserver": {
-		"golang": {
-			"command": "bingo",
-			"rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-			"filetypes": ["go"]
+			"golang": {
+				"command": "go-langserver",
+				"filetypes": ["go"],
+				"initializationOptions": {
+					"gocodeCompletionEnabled": true,
+					"diagnosticsEnabled": false,
+					"lintTool": "golint"
+				}
+			}
 		}
-	}
 }
