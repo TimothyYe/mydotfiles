@@ -70,8 +70,7 @@ set foldmethod=indent
 set foldlevelstart=99
 
 "set my leader
-let mapleader="\<Space>"
-let g:mapleader="\<Space>"
+let mapleader=","
 
 "For neomake
 map <leader>m :Neomake<CR>

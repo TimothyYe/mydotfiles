@@ -1,16 +1,20 @@
 {
-	  "coc.preferences.diagnostic.displayByAle": true,
-		"coc.preferences.noselect": true, 
-		"coc.preferences.timeout": 1000,
-		"languageserver": {
-			"golang": {
-				"command": "go-langserver",
-				"filetypes": ["go"],
-				"initializationOptions": {
-					"gocodeCompletionEnabled": true,
-					"diagnosticsEnabled": false,
-					"lintTool": "golint"
-				}
+	"suggest.triggerAfterInsertEnter": true,
+	"suggest.noselect": false,
+	"suggest.timeout": 500,
+	"suggest.snippetIndicator": "⭐",
+	"diagnostic.virtualText": true,
+	"languageserver": {
+		"golang": {
+			"command": "go-langserver",
+			"filetypes": [
+				"go"
+			],
+			"initializationOptions": {
+				"gocodeCompletionEnabled": true,
+				"diagnosticsEnabled": true,
+				"lintTool": "golint"
 			}
 		}
+	}
 }
