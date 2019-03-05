@@ -1,5 +1,5 @@
 "Settings for TagBar
-map <leader>g :TagbarToggle<CR>
+nnoremap <leader>g :TagbarToggle<CR>
 let g:tagbar_type_go = {
     \ 'ctagstype' : 'go',
     \ 'kinds' : [

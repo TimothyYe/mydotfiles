@@ -3,4 +3,4 @@
 let NERDTreeQuitOnOpen = 0
 let NERDChristmasTree=1
 let g:NERDTreeWinSize = 32 
-map <leader>f :NERDTreeToggle<CR>
+nnoremap <leader>f :NERDTreeToggle<CR>

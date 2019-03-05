@@ -70,15 +70,15 @@ set foldmethod=indent
 set foldlevelstart=99
 
 "set my leader
-let mapleader=","
+let mapleader="\<Space>"
 
 "For neomake
-map <leader>m :Neomake<CR>
+nnoremap <leader>m :Neomake<CR>
 let g:neomake_open_list = 2
 let g:neomake_list_height = 7
 
 "Disable highlight
-map <leader>n :nohl<CR>
+nnoremap <leader>n :nohl<CR>
 
 " coc settings
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<CR>"

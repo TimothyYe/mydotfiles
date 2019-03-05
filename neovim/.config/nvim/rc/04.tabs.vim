@@ -18,9 +18,6 @@ nnoremap  <leader>8 :call functions#tab_buf_switch(8)<cr>
 nnoremap  <leader>9 :call functions#tab_buf_switch(9)<cr>
 
 " tab navigation like zsh
-:nmap <leader>h :bp<CR>
-:imap <leader>h <C-c>:bp<CR>
-:nmap <leader>l :bn<CR>
-:imap <leader>l <C-c>:bn<CR>
-:nmap <leader>w :call functions#tab_buf_close()<CR>
-:imap <leader>w <C-c>:call functions#tab_buf_close()<CR>
+nnoremap <leader>h :bp<CR>
+nnoremap <leader>l :bn<CR>
+nnoremap <leader>w :call functions#tab_buf_close()<CR>
