@@ -7,7 +7,6 @@ Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'majutsushi/tagbar'
-Plug 'kien/ctrlp.vim' 
 Plug 'vim-scripts/xml.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
@@ -30,6 +29,7 @@ Plug 'TimothyYe/vim-ydict'
 Plug 'matze/vim-move'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 "Plugins for golang
 Plug 'fatih/vim-go', { 'for': 'go' }
