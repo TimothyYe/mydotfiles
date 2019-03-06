@@ -103,4 +103,4 @@ set updatetime=100
 au TextChangedI * GitGutter
 
 " search word under cursor
-noremap <Leader>s :Ack <cword><cr>
+noremap <Leader>s :Rg <cword><cr>

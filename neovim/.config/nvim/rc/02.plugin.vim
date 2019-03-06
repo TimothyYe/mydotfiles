@@ -2,7 +2,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 " My Bundles here:
 Plug 'iCyMind/NeoSolarized'
-Plug 'mileszs/ack.vim'
+Plug 'jremmen/vim-ripgrep'
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
