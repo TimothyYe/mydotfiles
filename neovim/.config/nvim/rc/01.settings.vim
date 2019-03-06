@@ -101,3 +101,6 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 
 set updatetime=100
 au TextChangedI * GitGutter
+
+" search word under cursor
+noremap <Leader>s :Ack <cword><cr>
