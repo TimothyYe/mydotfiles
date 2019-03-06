@@ -21,10 +21,6 @@ let g:move_key_modifier = 'C'
 "For ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
-"For Youdao Translater Plugin
-vnoremap <silent> <C-T> <Esc>:Ydv<CR> 
-nnoremap <silent> <C-T> <Esc>:Ydc<CR> 
-
 "inoremap jj <Esc>
  
 set guifont=Source\ Code\ Pro\ for\ Powerline\ :h18
@@ -77,6 +73,11 @@ nnoremap <leader>m :Neomake<CR>
 let g:neomake_open_list = 2
 let g:neomake_list_height = 7
 
+"For ydict Plugin
+vnoremap <leader>yv <Esc>:Ydv<CR>
+nnoremap <leader>yc <Esc>:Ydc<CR>
+nnoremap <leader>ye :<C-u>Yde<CR>
+
 "Disable highlight
 nnoremap <leader>n :nohl<CR>
 
@@ -97,3 +98,5 @@ nmap w= :resize +3<CR>
 
 " code search
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+set updatetime=100

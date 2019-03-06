@@ -26,7 +26,7 @@ Plug 'neomake/neomake'
 Plug 'mhinz/vim-startify'
 Plug 'vim-scripts/wildfire.vim'
 Plug 'yonchu/accelerated-smooth-scroll'
-Plug 'ianva/vim-youdao-translater'
+Plug 'TimothyYe/vim-ydict'
 Plug 'matze/vim-move'
 Plug 'pbrisbin/vim-mkdir'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
