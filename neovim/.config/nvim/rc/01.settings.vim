@@ -100,3 +100,4 @@ nmap w= :resize +3<CR>
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 set updatetime=100
+au TextChangedI * GitGutter
