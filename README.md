@@ -23,12 +23,12 @@ This is a demo to run a NeoVim in Tmux.
 >* Config NeoVim with plugins: YouCompleteMe/NERDTree/TagBar/etc...
 >* Shell is configured to use Zsh & Oh-My-Zsh
 
-![](http://ox2lpkfis.bkt.clouddn.com/tmux-nvim.png)
+![](https://github.com/TimothyYe/mydotfiles/blob/master/snapshot/tmux-nvim.png)
 
-![](http://ox2lpkfis.bkt.clouddn.com/tmux-nvim2.png)
+![](hhttps://github.com/TimothyYe/mydotfiles/blob/master/snapshot/tmux-nvim2.png)
 
 ![](https://www.xiaozhou.net/pics/ide.png)
 
 ![](https://www.xiaozhou.net/pics/tmux/3.png)
 
-![](http://ox2lpkfis.bkt.clouddn.com/tmux-nvim3.png)
+![](https://github.com/TimothyYe/mydotfiles/blob/master/snapshot/tmux-nvim3.png)
