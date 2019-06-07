@@ -1,16 +1,11 @@
 # Path to your oh-my-zsh installation.
 
-export ZSH=/Users/timothy/.oh-my-zsh
+export ZSH=/Users/timothy.ye/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="avit"
-#ZSH_THEME="miloshadzic"
-#ZSH_THEME="ys"
-ZSH_THEME="lambda-mod"
-#ZSH_THEME="odin"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -54,7 +49,7 @@ ZSH_THEME="lambda-mod"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autojump sublime web-search zsh-autosuggestions extract kubectl)
+plugins=(gitfast autojump sublime web-search zsh-autosuggestions extract kubectl)
 source <(kubectl completion zsh)
 
 # User configuration
@@ -80,8 +75,8 @@ export VISUAL="/usr/local/bin/nvim"
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.12.2/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.12.2/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
+export GOROOT=/usr/local/Cellar/go/1.12.5/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.12.5/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
 
 #Java ENV
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
