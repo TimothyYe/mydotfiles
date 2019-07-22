@@ -2,7 +2,7 @@
 This repository is used to manage all my dot configuration files, it includes:
 
 >* Vim
->* Tmux
+>* Tmux <= V2.8
 >* Zsh
 >* Bash
 >* NeoVim
