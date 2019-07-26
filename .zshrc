@@ -93,7 +93,7 @@ eval "$(thefuck --alias)"
 alias mysql='/usr/local/opt/mysql/bin/mysql'
 alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 
-alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code"
+alias code="/Applications/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/app/bin/code"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias vi="nvim"
 alias vim="nvim"
