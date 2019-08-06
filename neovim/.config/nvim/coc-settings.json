@@ -1,5 +1,5 @@
 {
-	"suggest.noselect": false,
+	"suggest.noselect": true,
 	"suggest.timeout": 500,
 	"suggest.snippetIndicator": "⭐",
 	"diagnostic.virtualText": true,
