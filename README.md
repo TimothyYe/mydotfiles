@@ -6,6 +6,7 @@ This repository is used to manage all my dot configuration files, it includes:
 >* Zsh
 >* Bash
 >* NeoVim
+>* Spacemacs
 
 ## Tutorials
 
