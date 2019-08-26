@@ -35,6 +35,7 @@ values."
      (go :variables
          go-tab-width 4
          gofmt-command "goimports"
+         go-backend 'lsp
      )
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
