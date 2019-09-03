@@ -47,7 +47,6 @@ values."
      (auto-completion :variables
                       auto-completion-enable-snippets-in-popup t)
      docker
-     ;; better-defaults
      emacs-lisp
      git
      (org :variables org-enable-github-support t
@@ -56,7 +55,6 @@ values."
      syntax-checking
      (shell :variables shell-default-shell 'eshell)
      twitter
-     ;; version-control
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
