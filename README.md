@@ -35,6 +35,8 @@ This is a demo to run a NeoVim in Tmux.
 
 ![](https://github.com/TimothyYe/mydotfiles/blob/master/snapshot/tmux-nvim3.png)
 
+>* Spacemacs
+
 ![](https://github.com/TimothyYe/mydotfiles/blob/master/snapshot/spacemacs.png)
 
 ![](https://github.com/TimothyYe/mydotfiles/blob/master/snapshot/spacemacs2.png)
