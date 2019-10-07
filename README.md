@@ -15,6 +15,7 @@ This repository is used to manage all my dot configuration files, it includes:
 * [程序员内功系列--Tmux篇](https://xiaozhou.net/learn-the-command-line-tmux-2018-04-27.html)
 * [程序员内功系列–-Vim篇](https://xiaozhou.net/learn-the-command-line-preface-2017-05-12.html)  
 * [程序员内功系列–-常用命令行工具篇](https://xiaozhou.net/learn-the-command-line-tools-md-2018-10-11.html)  
+* [使用Spacemacs打造你的开发环境](https://xiaozhou.net/from-neovim-to-spacemacs-2019-09-04.html)
 
 ## Demo
 This is a demo to run a NeoVim in Tmux.
@@ -33,6 +34,8 @@ This is a demo to run a NeoVim in Tmux.
 ![](https://xiaozhou.net/pics/tmux/3.png)
 
 ![](https://github.com/TimothyYe/mydotfiles/blob/master/snapshot/tmux-nvim3.png)
+
+>* Spacemacs
 
 ![](https://github.com/TimothyYe/mydotfiles/blob/master/snapshot/spacemacs.png)
 
