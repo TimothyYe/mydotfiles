@@ -74,8 +74,8 @@ export VISUAL="/usr/local/bin/nvim"
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.12.9/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.12.9/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
+export GOROOT=/usr/local/Cellar/go/1.13.1/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.13.1/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
 
 #Java ENV
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
