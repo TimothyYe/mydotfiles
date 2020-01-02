@@ -74,8 +74,8 @@ export VISUAL="/usr/local/bin/nvim"
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.13.4/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.13.4/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
+export GOROOT=/usr/local/Cellar/go/1.13.5/libexec
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.13.5/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
 
 #Java ENV
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
@@ -94,6 +94,7 @@ alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 
 alias code="/Applications/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/app/bin/code"
 alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+alias y="ydict"
 alias vi="nvim"
 alias vim="nvim"
 alias tmux="tmux -2"
