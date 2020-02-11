@@ -93,7 +93,6 @@ alias mysql='/usr/local/opt/mysql/bin/mysql'
 alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 
 alias code="/Applications/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/app/bin/code"
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 alias y="ydict"
 alias vi="nvim"
 alias vim="nvim"
@@ -161,7 +160,8 @@ alias -s json=vi
 # alias for proxy
 alias proxy="export ALL_PROXY=socks5://127.0.0.1:7070"
 alias unproxy="unset ALL_PROXY"
-alias ip="curl ip.cn"
+alias ip="curl -4 ip.sb"
+alias ipv6="curl -6 ip.sb"
 
 # custom functions
 function jubi() {
@@ -189,8 +189,6 @@ function jubi() {
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 _COLUMNS=$(tput cols)
 _MESSAGE=" FBI Warining "
