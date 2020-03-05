@@ -50,7 +50,6 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(gitfast autojump sublime web-search zsh-autosuggestions extract kubectl)
-source <(kubectl completion zsh)
 
 # User configuration
 
@@ -74,8 +73,10 @@ export VISUAL="/usr/local/bin/nvim"
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.13.6/libexec
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.13.6/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
+export GOROOT=/usr/local/Cellar/go/1.14/libexec
+export GOPROXY=direct
+export GOPRIVATE="*.garena.com"
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.14/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
 
 #Java ENV
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
