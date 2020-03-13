@@ -164,11 +164,6 @@ alias unproxy="unset ALL_PROXY"
 alias ip="curl -4 ip.sb"
 alias ipv6="curl -6 ip.sb"
 
-# custom functions
-function jubi() {
-	while :; do curl https://www.jubi.com/api/v1/ticker?coin=$1 2>/dev/null | jq -C; sleep 3; done
-}
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
