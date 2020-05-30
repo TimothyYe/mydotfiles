@@ -1,0 +1,44 @@
+{
+  "go.formatTool": "goimports",
+  "go.lintTool": "golangci-lint",
+  "go.languageServerExperimentalFeatures": {
+    "format": false,
+    "autoComplete": true,
+    "rename": true,
+    "goToDefinition": true,
+    "hover": true,
+    "signatureHelp": true,
+    "goToTypeDefinition": true,
+    "goToImplementation": true,
+    "documentSymbols": true,
+    "workspaceSymbols": true,
+    "findReferences": true,
+    "diagnostics": false,
+    "documentLink": true
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust"
+  },
+  "rust-client.channel": "stable",
+  "python.jediEnabled": false,
+  "go.useLanguageServer": true,
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Fira Code'",
+  "explorer.confirmDelete": false,
+  "leetcode.hint.configWebviewMarkdown": false,
+  "leetcode.workspaceFolder": "/Users/timothy.ye/.leetcode",
+  "leetcode.defaultLanguage": "golang",
+  "leetcode.hint.commentDescription": false,
+  "leetcode.hint.commandShortcut": false,
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "leetcode.endpoint": "leetcode",
+  "[markdown]": {
+    "editor.formatOnSave": false
+  },
+  "editor.largeFileOptimizations": false
+}
