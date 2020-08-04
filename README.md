@@ -7,6 +7,7 @@ This repository is used to manage all my dot configuration files, it includes:
 >* Bash
 >* NeoVim
 >* Spacemacs
+>* Alacritty
 
 ## Tutorials
 
