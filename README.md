@@ -9,6 +9,8 @@ This repository is used to manage all my dot configuration files, it includes:
 >* Spacemacs
 >* Alacritty
 
+My Doom Emacs configuration is [here](https://github.com/TimothyYe/doom-emacs), if you are interested.
+
 ## Tutorials
 
 * [程序员内功系列--序篇](https://xiaozhou.net/learn-the-command-line-preface-2017-05-12.html)
