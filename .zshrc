@@ -78,6 +78,7 @@ export GOPROXY=direct
 export GOPRIVATE="*.garena.com"
 export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.14.1/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
 
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
 PATH=$PATH:$JAVA_HOME/bin
@@ -244,3 +245,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+eval "$(starship init zsh)"
