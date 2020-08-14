@@ -7,6 +7,9 @@ This repository is used to manage all my dot configuration files, it includes:
 >* Bash
 >* NeoVim
 >* Spacemacs
+>* Alacritty
+
+My Doom Emacs configuration is [here](https://github.com/TimothyYe/doom-emacs), if you are interested.
 
 ## Tutorials
 
