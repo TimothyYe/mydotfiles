@@ -75,7 +75,7 @@ export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
 export GOROOT=/usr/local/Cellar/go/1.15/libexec
 export GOPROXY=direct
-export GOPRIVATE="*.garena.com"
+export GOPRIVATE="git.garena.com"
 export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.15/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
@@ -246,5 +246,3 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-
-eval "$(starship init zsh)"
