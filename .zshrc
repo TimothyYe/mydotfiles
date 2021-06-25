@@ -69,6 +69,7 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
+export GPG_TTY=$(tty)
 
 unset GEM_HOME
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
@@ -80,7 +81,7 @@ export VISUAL="/usr/local/bin/nvim"
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.16.5/libexec
+export GOROOT=/usr/local/Cellar/go/1.16.5
 export GOPROXY=direct
 export GOPRIVATE="git.garena.com"
 export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.16.5/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
