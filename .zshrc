@@ -145,17 +145,8 @@ alias gm="git merge"
 alias pro="proxychains4"
 alias gb="go build"
 
-#For docker
-alias dm="docker-machine"
-alias di="docker images"
-alias dps="docker ps"
-alias dsp="docker stop"
-alias ds="docker start"
-alias dl="docker logs --tail=50"
-alias drm="docker rm"
-alias drmi="docker rmi $(docker images --filter "dangling=true" -q --no-trunc)"
+# For kubectl
 alias kc="kubectl"
-
 
 alias -s go=vi
 alias -s html=vi
@@ -257,3 +248,19 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/timothy.ye/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/timothy.ye/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/timothy.ye/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/timothy.ye/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
