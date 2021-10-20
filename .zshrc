@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Path to your oh-my-zsh installation.
 
 export ZSH=/Users/timothy.ye/.oh-my-zsh
@@ -69,7 +62,6 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
 
-export GPG_TTY=$(tty)
 
 unset GEM_HOME
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
@@ -77,19 +69,23 @@ unset GEM_HOME
 export DYLD_LIBRARY_PATH=/usr/local/opt/mysql/lib:$DYLD_LIBRARY_PATH
 export EDITOR="/usr/local/bin/nvim"
 export VISUAL="/usr/local/bin/nvim"
+
+#ENV parameters for conan
+export CONAN_USERNAME=user
+export CONAN_CHANNEL=stable
 								 
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.16.5
+export GOROOT=/usr/local/Cellar/go/1.17.2/libexec
 export GOPROXY=direct
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.16.5/bin:~/.mix:/usr/local/share/dotnet:/usr/local/opt/postgresql@10/bin:$HOME/.cargo/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.17.2/bin:$HOME/.cargo/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
-JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home
-PATH=$PATH:$JAVA_HOME/bin
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home
+PATH=$PATH:$JAVA_HOME/bin:/Users/timothy.ye/apache-maven-3.8.1/bin
 
 #Env configuration for anaconda
 export PATH=$PATH:~/anaconda2/bin
@@ -145,8 +141,8 @@ alias gm="git merge"
 alias pro="proxychains4"
 alias gb="go build"
 
-# For kubectl
 alias kc="kubectl"
+
 
 alias -s go=vi
 alias -s html=vi
@@ -186,51 +182,6 @@ alias ipv6="curl -6 ip.sb"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-_COLUMNS=$(tput cols)
-_MESSAGE=" FBI Warining "
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-
-echo " "
-echo -e "${spaces}\033[41;37;5m FBI WARNING \033[0m"
-echo " "
-_COLUMNS=$(tput cols)
-_MESSAGE="Ferderal Law provides severe civil and criminal penalties for"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="the unauthorized reproduction, distribution, or exhibition of"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="copyrighted motion pictures (Title 17, United States Code,"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="Sections 501 and 508). The Federal Bureau of Investigation"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="investigates allegations of criminal copyright infringement"
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-
-_COLUMNS=$(tput cols)
-_MESSAGE="(Title 17, United States Code, Section 506)."
-y=$(( ( $_COLUMNS - ${#_MESSAGE} )  / 2 ))
-spaces=$(printf "%-${y}s" " ")
-echo -e "${spaces}${_MESSAGE}"
-echo " "
-
 # Load zsh-syntax-highlighting.
 source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #
@@ -245,9 +196,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
