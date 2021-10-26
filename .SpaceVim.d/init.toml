@@ -39,3 +39,9 @@ name = "lang#go"
 
 [[layers]]
 name = "fzf"
+
+[[layers]]
+name = "git"
+
+[[layers]]
+name = "shell"
