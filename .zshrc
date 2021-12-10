@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 
 export ZSH=/Users/timothy.ye/.oh-my-zsh
@@ -77,10 +84,11 @@ export CONAN_CHANNEL=stable
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.17.2/libexec
+export GOROOT=/usr/local/Cellar/go/1.17.3/libexec
 export GOPROXY=direct
+export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.17.2/bin:$HOME/.cargo/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.17.3/bin:$HOME/.cargo/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
@@ -199,16 +207,18 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/timothy.ye/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/timothy.ye/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/timothy.ye/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/timothy.ye/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/timothy.ye/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/timothy.ye/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/timothy.ye/opt/miniconda3/bin:$PATH"
+        export PATH="/Users/timothy.ye/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
