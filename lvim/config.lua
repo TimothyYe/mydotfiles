@@ -75,6 +75,14 @@ lvim.builtin.which_key.mappings["w"] = {
   c = { "<cmd>close<CR>", "Close Window" },
 }
 
+lvim.builtin.which_key.mappings["t"] = {
+  "<cmd>ToggleTerm<CR>", "Open The Terminal",
+}
+
+lvim.builtin.which_key.mappings["'"] = {
+  "<cmd>ToggleTerm<CR>", "Open The Terminal",
+}
+
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
