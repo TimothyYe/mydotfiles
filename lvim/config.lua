@@ -88,11 +88,11 @@ lvim.builtin.which_key.mappings["ss"] = {
 }
 
 lvim.builtin.which_key.mappings["sP"] = {
-  "<cmd>Telescope projects<CR>", "Switch Projects",
+  "<cmd>Telescope projects<CR>", "Projects",
 }
 
 lvim.builtin.which_key.mappings["P"] = {
-  "<cmd>Telescope projects<CR>", "Switch Projects",
+  "<cmd>Telescope projects<CR>", "Projects",
 }
 
 -- TODO: User Config for predefined plugins
