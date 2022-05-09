@@ -83,6 +83,18 @@ lvim.builtin.which_key.mappings["'"] = {
   "<cmd>ToggleTerm<CR>", "Open The Terminal",
 }
 
+lvim.builtin.which_key.mappings["ss"] = {
+  "<cmd>Telescope live_grep<CR>", "Global Search",
+}
+
+lvim.builtin.which_key.mappings["sP"] = {
+  "<cmd>Telescope projects<CR>", "Switch Projects",
+}
+
+lvim.builtin.which_key.mappings["P"] = {
+  "<cmd>Telescope projects<CR>", "Switch Projects",
+}
+
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
 lvim.builtin.alpha.active = true
