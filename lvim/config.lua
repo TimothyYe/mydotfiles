@@ -189,7 +189,9 @@ lvim.builtin.treesitter.highlight.enabled = true
 lvim.plugins = {
   { "folke/tokyonight.nvim" },
   { "ChristianChiarulli/nvcode-color-schemes.vim" },
+  { "easymotion/vim-easymotion" },
 }
+
 
 -- Autocommands (https://neovim.io/doc/user/autocmd.html)
 -- lvim.autocommands.custom_groups = {
