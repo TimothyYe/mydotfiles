@@ -68,6 +68,7 @@ lvim.builtin.which_key.mappings["b"] = {
   l = { "<cmd>BufferLineCloseRight<cr>", "Close all to the right" },
 }
 
+
 lvim.builtin.which_key.mappings["w"] = {
   name = "Window",
   ["-"] = { "<cmd>split<CR>", "Horizontal Split" },
@@ -95,6 +96,7 @@ lvim.builtin.which_key.mappings["sP"] = {
 lvim.builtin.which_key.mappings["P"] = {
   "<cmd>Telescope projects<CR>", "Projects",
 }
+
 
 -- TODO: User Config for predefined plugins
 -- After changing plugin config exit and reopen LunarVim, Run :PackerInstall :PackerCompile
@@ -167,6 +169,11 @@ lvim.builtin.treesitter.highlight.enabled = true
 --     filetypes = { "typescript", "typescriptreact" },
 --   },
 -- }
+
+local formatters = require("lvim.lsp.null-ls.formatters")
+formatters.setup({
+  { command = "goimports", filetypes = { "go" } },
+})
 
 -- -- set additional linters
 -- local linters = require "lvim.lsp.null-ls.linters"
