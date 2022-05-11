@@ -73,6 +73,7 @@ lvim.builtin.which_key.mappings["w"] = {
   ["-"] = { "<cmd>split<CR>", "Horizontal Split" },
   ["/"] = { "<cmd>vsplit<CR>", "Vertical Split" },
   c = { "<cmd>close<CR>", "Close Window" },
+  d = { "<cmd>close<CR>", "Close Window" },
 }
 
 lvim.builtin.which_key.mappings["t"] = {
