@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # Path to your oh-my-zsh installation.
 
 export ZSH=/Users/timothy.ye/.oh-my-zsh
@@ -12,7 +5,7 @@ export ZSH=/Users/timothy.ye/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -88,7 +81,7 @@ export GOROOT=/usr/local/Cellar/go/1.18.1/libexec
 export GOPROXY=direct
 export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.18.1/bin:$HOME/.cargo/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.18.1/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
@@ -109,8 +102,8 @@ alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 alias code="/Applications/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/app/bin/code"
 alias cat="bat"
 alias y="ydict"
-alias vi="nvim"
-alias vim="nvim"
+alias vi="lvim"
+alias vim="lvim"
 alias tmux="tmux -2"
 alias ssh="ssh -X"
 alias s="ssh -X"
@@ -222,5 +215,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# init starship
+eval "$(starship init zsh)"
