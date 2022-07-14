@@ -39,11 +39,11 @@ export CONAN_CHANNEL=stable
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.18.3/libexec
+export GOROOT=/usr/local/Cellar/go/1.18.4/libexec
 export GOPROXY=direct
 export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.18.3/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.18.4/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
@@ -63,6 +63,7 @@ alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 
 alias code="/Applications/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resources/app/bin/code"
 alias cat="bat"
+alias more="cat"
 alias y="ydict"
 alias vi="lvim"
 alias vim="lvim"
