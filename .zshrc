@@ -39,11 +39,11 @@ export CONAN_CHANNEL=stable
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.19.2/libexec
+export GOROOT=/usr/local/Cellar/go/1.19.5/libexec
 export GOPROXY=direct
 export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.19.2/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.19.5/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
@@ -57,7 +57,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 #[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval "$(thefuck --alias)"
 alias mysql='/usr/local/opt/mysql/bin/mysql'
 alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
 
