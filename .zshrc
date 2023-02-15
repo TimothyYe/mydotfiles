@@ -39,11 +39,11 @@ export CONAN_CHANNEL=stable
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.19.5/libexec
+export GOROOT=/usr/local/Cellar/go/1.19.6/libexec
 export GOPROXY=direct
 export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.19.5/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.19.6/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
