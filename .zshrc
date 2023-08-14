@@ -39,11 +39,11 @@ export CONAN_CHANNEL=stable
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.20.3/libexec
+export GOROOT=/usr/local/Cellar/go/1.21.0/libexec
 export GOPROXY=direct
 export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.20.3/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
+export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.21.0/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
@@ -64,8 +64,8 @@ alias code="/Applications/Visual\ Studio\ Code\ -\ Insiders.app/Contents/Resourc
 alias cat="bat"
 alias more="cat"
 alias y="ydict"
-alias vi="lvim"
-alias vim="lvim"
+alias vi="nvim"
+alias vim="nvim"
 alias tmux="tmux -2"
 alias ssh="ssh -X"
 alias s="ssh -X"
@@ -74,7 +74,7 @@ alias rd="rmdir"
 alias df="df -h"
 alias mv="mv -i"
 alias slink="link -s"
-alias ls='lsd'
+alias ls="lsd"
 alias l="ls -l"
 alias la="ls -a"
 alias ll="ls -la"
