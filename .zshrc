@@ -43,7 +43,7 @@ export GOROOT=/usr/local/Cellar/go/1.21.1/libexec
 export GOPROXY=direct
 export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:/usr/local/Cellar/go/1.21.1/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
+export PATH=$PATH:$GOPATH/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
