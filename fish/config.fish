@@ -7,7 +7,12 @@ set PATH /root/go/bin $PATH
 set GOPATH /root/workspace $GOPATH
 set GOPROXY direct $GOPROXY
 
+if test -f /home/tim/.autojump/share/autojump/autojump.fish
+    . /home/tim/.autojump/share/autojump/autojump.fish
+end
+
 starship init fish | source
+
 alias gs="git status"
 alias gsm="git summary"
 alias ga='git add'
