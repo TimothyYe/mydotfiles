@@ -1,12 +1,20 @@
-theme = "onedark"
+theme = "github_dark"
 
 [editor]
 line-number = "relative"
+bufferline = "multiple"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
 
 [keys.normal]
 # Quick iteration on config changes
 C-g = ":config-open"
 C-r = ":config-reload"
+H = ":buffer-previous"
+L = ":buffer-next"
 
 # Some nice Helix stuff
 C-h = "select_prev_sibling"
@@ -88,6 +96,10 @@ w = ["move_next_word_start", "yank_main_selection_to_clipboard", "delete_selecti
 W = ["move_next_long_word_start", "yank_main_selection_to_clipboard", "delete_selection"]
 g = { g = ["select_mode", "extend_to_line_bounds", "goto_file_start", "extend_to_line_bounds", "yank_main_selection_to_clipboard", "delete_selection", "normal_mode"] }
 
+[keys.normal.space]
+b = { d = ":buffer-close" }
+w = { h = "hsplit", v = "vsplit", d = "wclose"}
+
 [keys.normal.g]
 b = ["goto_last_accessed_file"]
 
@@ -106,6 +118,7 @@ g = { g = ["select_mode", "extend_to_line_bounds", "goto_file_start", "extend_to
 # Escape the madness! No more fighting with the cursor! Or with multiple cursors!
 esc = ["collapse_selection", "normal_mode"]
 C-c = "normal_mode"
+j = { k = "normal_mode" }
 
 [keys.select]
 # Muscle memory
