@@ -5,7 +5,6 @@ line-number = "relative"
 
 [keys.normal]
 # Quick iteration on config changes
-C-o = ":config-open"
 C-r = ":config-reload"
 
 # Some nice Helix stuff
@@ -13,6 +12,8 @@ C-h = "select_prev_sibling"
 C-j = "shrink_selection"
 C-k = "expand_selection"
 C-l = "select_next_sibling"
+C-o = "goto_last_accessed_file"
+C-c = "normal_mode"
 
 # Personal preference
 o = ["open_below", "normal_mode"]
@@ -86,6 +87,9 @@ G = ["select_mode", "extend_to_line_bounds", "goto_last_line", "extend_to_line_b
 w = ["move_next_word_start", "yank_main_selection_to_clipboard", "delete_selection"]
 W = ["move_next_long_word_start", "yank_main_selection_to_clipboard", "delete_selection"]
 g = { g = ["select_mode", "extend_to_line_bounds", "goto_file_start", "extend_to_line_bounds", "yank_main_selection_to_clipboard", "delete_selection", "normal_mode"] }
+
+[keys.normal.g]
+b = ["goto_last_accessed_file"]
 
 [keys.normal.y]
 y = ["extend_to_line_bounds", "yank_main_selection_to_clipboard", "normal_mode", "collapse_selection"]
