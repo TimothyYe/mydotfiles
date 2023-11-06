@@ -22,6 +22,7 @@ C-j = "shrink_selection"
 C-k = "expand_selection"
 C-l = "select_next_sibling"
 C-o = "goto_last_accessed_file"
+C-w = { c = ":buffer-close" }
 
 # Personal preference
 o = ["open_below", "normal_mode"]
