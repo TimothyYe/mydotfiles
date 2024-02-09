@@ -39,7 +39,7 @@ export CONAN_CHANNEL=stable
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/1.21.6/libexec
+export GOROOT=/usr/local/Cellar/go/$(ls /usr/local/Cellar/go | sort -V | tail -n 1)/libexec
 export GOPROXY=direct
 export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
