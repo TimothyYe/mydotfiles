@@ -1,6 +1,6 @@
 # Path to your oh-my-zsh installation.
 
-export ZSH=/Users/timothy.ye/.oh-my-zsh
+export ZSH=/Users/timothy/.oh-my-zsh
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -11,11 +11,11 @@ export ZSH=/Users/timothy.ye/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(gitfast autojump sublime web-search zsh-autosuggestions extract kubectl)
+plugins=(gitfast autojump sublime web-search extract kubectl)
 
 # User configuration
 
-export PATH="/usr/local/Cellar/mysql/5.7.13/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/Timothy/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -23,7 +23,7 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8  
 export LANG=en_US.UTF-8
-
+export PATH=$PATH:$GOPATH/bin:$HOME/.cargo/bin:/Users/timothy/.local/bin:/opt/homebrew/bin
 
 unset GEM_HOME
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
@@ -39,16 +39,15 @@ export CONAN_CHANNEL=stable
 #ENV parameters for golang
 export GOPATH=$HOME/workspace
 export GOBIN=$HOME/workspace/bin
-export GOROOT=/usr/local/Cellar/go/$(ls /usr/local/Cellar/go | sort -V | tail -n 1)/libexec
+export GOROOT=/opt/homebrew/Cellar/go/$(ls /opt/homebrew/Cellar/go | sort -V | tail -n 1)/libexec
 export GOPROXY=direct
 export GOVCS=*:all
 export GOPRIVATE="git.garena.com"
-export PATH=$PATH:$GOPATH/bin:$HOME/.cargo/bin:/Users/timothy.ye/.local/bin
 
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
 #Java ENV
 JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home
-PATH=$PATH:$JAVA_HOME/bin:/Users/timothy.ye/apache-maven-3.8.1/bin
+PATH=$PATH:$JAVA_HOME/bin:/Users/timothy/apache-maven-3.8.1/bin
 
 #Env configuration for anaconda
 export PATH=$PATH:~/anaconda2/bin
@@ -126,30 +125,30 @@ alias ip="curl -4 ip.sb"
 alias ipv6="curl -6 ip.sb"
 
 # Load zsh-syntax-highlighting.
-source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #
 # Load zsh-autosuggestions.
-source ~/.oh-my-zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-#
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Enable autosuggestions automatically.
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=10"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fzf
+source <(fzf --zsh)
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/timothy.ye/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/timothy/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/timothy.ye/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/timothy.ye/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/timothy/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/timothy/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/timothy.ye/miniconda3/bin:$PATH"
+        export PATH="/Users/timothy/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
