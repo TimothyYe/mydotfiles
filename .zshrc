@@ -52,9 +52,10 @@ PATH=$PATH:$JAVA_HOME/bin:/Users/timothy/apache-maven-3.8.1/bin
 #Env configuration for anaconda
 export PATH=$PATH:~/anaconda2/bin
 
+# NVM
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+    [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+    [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 alias mysql='/usr/local/opt/mysql/bin/mysql'
 alias mysqladmin='/usr/local/opt/mysql/bin/mysqladmin'
@@ -156,3 +157,4 @@ unset __conda_setup
 
 # init starship
 eval "$(starship init zsh)"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
